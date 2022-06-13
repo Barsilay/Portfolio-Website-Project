@@ -1,50 +1,117 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
-    font-size: 16px;
+    --spacing-1: 8px;
+    --spacing-2: 12px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --border-radius: 12px;
+    --font-color: #323232;
 }
+
+html, body {
+    height: 100%;
+    color: var(--font-color);
+} 
+
+html {
+    scroll-behavior: smooth;  
+}
+
+
+
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://cdn.myportfolio.com/5f720a17-c1dd-4390-9ba5-fe4a2ecd4a1d/6f76fae1-f9b2-4203-a8c9-27080bb079e1_rw_1920.jpg?h=1850c46a7d89115649666ec8980e29cb);
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #dedede;
+}
 
+ 
+#logo {
+    margin: 0;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold; 
 }
 
 
 
- 
-    
-
 .navigation {
-background-color: black;
-padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+
 
 }
 
 
 .container{
     display: flex;
-    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    text-decoration: none;
 
 }
 
 .childli {
-  margin: 0rem 2rem;
-  list-style:none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+   
   
 }
 
-.hero {
-    height: 100vh;
-    width: 100%;
+a {
+    text-decoration: none;
+    color: black;
+}
+section {
+    display: block;
+    padding: var(--spacing-3) 0;
+
+}
+.about-me-container {
+    display: flex;
 }
 
-a{
-    color: white;
-    text-decoration: none;
+div {
+    display: block;
 }
+
+.portrait {
+    width: 300px;
+    border-radius: var(--border-radius);
+    flex-shrink: 0;
+}
+
+a:hover {
+color:red;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ul-container {
+    display: flex;
+   flex-direction: column;
+}
+
